@@ -1,0 +1,278 @@
+30008	20150116-102345-W: [LUA-16753] <3328419080:6>Role Logout Failed, Not online Role!
+3643	20150116-133919-E: [LUA-204486] <806959756:85>current ConnectionID is invalid! nGSConnectionID = 0
+	[Lua s2l.lua:303] func@295 
+	(
+		nConnectionID=1,
+		nPlayerID=85,
+		szFunc="OnAddTreasureMapRoleList",
+		arg=nil,
+		tRole="userdata",
+		nGSConnectionID=0,
+	)
+	[C =[C]:-1] SafeCall 
+	(
+		(*temporary)=function: 0x2d0c680,
+	)
+	[Lua utils.lua:11] SafeCall 
+	(
+		fnAction=function: 0x2d252e0,
+		arg=nil,
+	)
+	[Lua s2l.lua:449] OnScriptCall 
+	(
+		nConnectionID=1,
+		szFunc="SendToPlayer",
+		arg=nil,
+		fnFunc=function: 0x2d252e0,
+	)
+	[Lua gameservermanager.lua:57] func@54 
+	(
+		nConnectionID=1,
+		hPackage="userdata",
+		nLength=131,
+	)
+2252	20150116-135457-W: [LUA-219492] <3590713561:23>Player Had Buy This Item Already~
+2130	20150116-165658-W: [LUA-394231] <647255587:73>Role Logout Failed, tRole.nGSConnectionID:0 ~= nGSConnectionID:1!
+512	20150116-163557-W: [LUA-374062] <1838085514:555>KFactionManager.CreateFaction Failed, tRole.nLevel:39 < KFactionSetting.GetCreateFactionLevel():40
+378	20150116-150435-E: KGLOG_PROCESS_ERROR(nRetCode) at line 360 in static int KG_ScriptDataSetPool::GetPoolAndBuff(lua_State*, KG_ScriptDataSetPool**, BYTE**)
+345	20150116-163202-W: [LUA-370296] <2903447776:6>KFactionManager.CreateFaction Failed, m_tFactionInfo.tPlayerIDToFactionMap[nPlayerID]
+286	20150115-153355-E: [LUA-6788] <1216777520:0>GS->LS, Error:<3974472300:0>SafeCall runtime Error! ...rver/Scripts\logicserver\module\role\rolemanager.lua:589: attempt to index local 'tRole' (a nil value)
+	[tail =(tail call):-1]  
+	(error func!
+	)
+	[Lua rolemanager.lua:589] GetGroupID 
+	(
+		tRole=nil,
+		(*temporary)=nil,
+		(*temporary)="attempt to index local 'tRole' (a nil value)",
+	)
+	[Lua faction.lua:583] GetViewInfo 
+	(
+		tFaction=table: 0x3c93f80,
+		tMaster="userdata",
+		tViewFactionInfo=table: 0x2d3c5b0,
+		tMemberList={},
+		(for generator)=function: 0x2ba5ac0,
+		(for state)=table: 0x3c9b960,
+		(for control)=1,
+		_=1,
+		tTmpPlayerInfo=table: 0x3c9b800,
+		tRole=nil,
+		tMember={["nID"] = 25},
+	)
+	[Lua factionmanager.lua:340] ViewFactionInfo 
+	(
+		nPlayerID=95,
+		nFactionID=1,
+		tFaction=table: 0x3c93f80,
+		tRole="userdata",
+	)
+	[Lua s2l.lua:159] func@158 
+	(
+		nConnectionID=1,
+		nPlayerID=95,
+		nFactionID=1,
+	)
+	[C =[C]:-1] SafeCall 
+	(
+		(*temporary)=function: 0x2baf680,
+	)
+	[Lua utils.lua:11] SafeCall 
+	(
+		fnAction=function: 0x2c38230,
+		arg=nil,
+	)
+	[Lua s2l.lua:449] OnScriptCall 
+	(
+		nConnectionID=1,
+		szFunc="OnViewFactionInfo",
+		arg=nil,
+		fnFunc=function: 0x2c38230,
+	)
+	[Lua gameservermanager.lua:57] func@54 
+	(
+		nConnectionID=1,
+		hPackage="userdata",
+		nLength=42,
+	), OnViewFactionInfo(95,1,)
+	[Lua s2l.lua:454] OnScriptCall 
+	(
+		nConnectionID=1,
+		szFunc="OnViewFactionInfo",
+		arg=nil,
+		fnFunc=function: 0x2c38230,
+		bSuccess=false,
+		szErrorMsg=<3974472300:0>SafeCall runtime Error! ...rver/Scripts\logicserver\module\role\rolemanager.lua:589: attempt to index local 'tRole' (a nil value)
+	[tail =(tail call):-1]  
+	(error func!
+	)
+	[Lua rolemanager.lua:589] GetGroupID 
+	(
+		tRole=nil,
+		(*temporary)=nil,
+		(*temporary)="attempt to index local 'tRole' (a nil value)",
+	)
+	[Lua faction.lua:583] GetViewInfo 
+	(
+		tFaction=table: 0x3c93f80,
+		tMaster="userdata",
+		tViewFactionInfo=table: 0x2d3c5b0,
+		tMemberList={},
+		(for generator)=function: 0x2ba5ac0,
+		(for state)=table: 0x3c9b960,
+		(for control)=1,
+		_=1,
+		tTmpPlayerInfo=table: 0x3c9b800,
+		tRole=nil,
+		tMember={["nID"] = 25},
+	)
+	[Lua factionmanager.lua:340] ViewFactionInfo 
+	(
+		nPlayerID=95,
+		nFactionID=1,
+		tFaction=table: 0x3c93f80,
+		tRole="userdata",
+	)
+	[Lua s2l.lua:159] func@158 
+	(
+		nConnectionID=1,
+		nPlayerID=95,
+		nFactionID=1,
+	)
+	[C =[C]:-1] SafeCall 
+	(
+		(*temporary)=function: 0x2baf680,
+	)
+	[Lua utils.lua:11] SafeCall 
+	(
+		fnAction=function: 0x2c38230,
+		arg=nil,
+	)
+	[Lua s2l.lua:449] OnScriptCall 
+	(
+		nConnectionID=1,
+		szFunc="OnViewFactionInfo",
+		arg=nil,
+		fnFunc=function: 0x2c38230,
+	)
+	[Lua gameservermanager.lua:57] func@54 
+	(
+		nConnectionID=1,
+		hPackage="userdata",
+		nLength=42,
+	),
+	)
+	[Lua gameservermanager.lua:57] func@54 
+	(
+		nConnectionID=1,
+		hPackage="userdata",
+		nLength=42,
+	)
+286	20150115-153355-E: [Lua] <3974472300:0>SafeCall runtime Error! ...rver/Scripts\logicserver\module\role\rolemanager.lua:589: attempt to index local 'tRole' (a nil value)
+	[tail =(tail call):-1]  
+	(error func!
+	)
+	[Lua rolemanager.lua:589] GetGroupID 
+	(
+		tRole=nil,
+		(*temporary)=nil,
+		(*temporary)="attempt to index local 'tRole' (a nil value)",
+	)
+	[Lua faction.lua:583] GetViewInfo 
+	(
+		tFaction=table: 0x3c93f80,
+		tMaster="userdata",
+		tViewFactionInfo=table: 0x2d3c5b0,
+		tMemberList={},
+		(for generator)=function: 0x2ba5ac0,
+		(for state)=table: 0x3c9b960,
+		(for control)=1,
+		_=1,
+		tTmpPlayerInfo=table: 0x3c9b800,
+		tRole=nil,
+		tMember={["nID"] = 25},
+	)
+	[Lua factionmanager.lua:340] ViewFactionInfo 
+	(
+		nPlayerID=95,
+		nFactionID=1,
+		tFaction=table: 0x3c93f80,
+		tRole="userdata",
+	)
+	[Lua s2l.lua:159] func@158 
+	(
+		nConnectionID=1,
+		nPlayerID=95,
+		nFactionID=1,
+	)
+	[C =[C]:-1] SafeCall 
+	(
+		(*temporary)=function: 0x2baf680,
+	)
+	[Lua utils.lua:11] SafeCall 
+	(
+		fnAction=function: 0x2c38230,
+		arg=nil,
+	)
+	[Lua s2l.lua:449] OnScriptCall 
+	(
+		nConnectionID=1,
+		szFunc="OnViewFactionInfo",
+		arg=nil,
+		fnFunc=function: 0x2c38230,
+	)
+	[Lua gameservermanager.lua:57] func@54 
+	(
+		nConnectionID=1,
+		hPackage="userdata",
+		nLength=42,
+	)
+189	20150116-150435-E: KGLOG_PROCESS_ERROR(nRetCode) at line 516 in static int KG_ScriptDataSetPool::LuaPool_GetDataSet(lua_State*)
+189	20150116-150435-E: KGLOG_PROCESS_ERROR(nRetCode) at line 566 in static int KG_ScriptDataSetPool::LuaPool_IsDataSetExist(lua_State*)
+122	20150116-141402-W: [LUA-237822] <2784975992:44>Join Faction Pvp Fail, No tPvpInfo of WorldID:1001001
+4	20150116-131700-E: [LUA-183073] <2361278584:0>Get nil DanageAward By Level:41
+	[Lua worldbosssetting.lua:117] GetDanageAward 
+	(
+		nLevel=41,
+	)
+	[Lua worldbossmanager.lua:291] GetDanageAward 
+	(
+		tWorldBossInfo=table: 0x33d3ee0,
+		nRoleID=85,
+		tDanageInfo={["nDamageNum"] = 43889,["tRole"] = "userdata"},
+		tIniFile=table: 0x3dfc240,
+		nRoleLv=41,
+	)
+	[Lua worldbossmanager.lua:311] fnFunc 
+	(
+		nWorldID=1001001,
+		tWorldBossInfo=table: 0x33d3ee0,
+		(for generator)=function: 0x2d02ac0,
+		(for state)=table: 0x2e46bf0,
+		(for control)=85,
+		nRoleID=85,
+		_={["nDamageNum"] = 43889,["tRole"] = "userdata"},
+	)
+	[Lua lsframeactionagent.lua:44] DoWorldAction 
+	(
+		tAction={["tArgs"] = {},["nBrocastWorldIndex"] = 2,["tWorldList"] = {[1] = 1,[2] = 1001001},["nTaskType"] = 2},
+		nWorldID=1001001,
+		tArgs={[1] = 1001001},
+	)
+	[Lua lsframeactionagent.lua:54] func@48 
+	(
+		tAction={["tArgs"] = {},["nBrocastWorldIndex"] = 2,["tWorldList"] = {[1] = 1,[2] = 1001001},["nTaskType"] = 2},
+	)
+	[C =[C]:-1] SafeCall 
+	(
+		(*temporary)=function: 0x2d0c680,
+	)
+	[Lua utils.lua:11] SafeCall 
+	(
+		fnAction=function: 0x2d640d0,
+		arg=nil,
+	)
+	[Lua logicserver.lua:96] func@84 
+	(
+		nLoop=183073,
+	)
